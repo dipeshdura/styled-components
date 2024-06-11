@@ -1,8 +1,11 @@
-import React from 'react'
+
+import StyledButton from "./components/Button/Button"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+     <StyledButton>Button</StyledButton>
+    </div>
   )
 }
 
