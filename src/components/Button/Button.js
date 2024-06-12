@@ -1,8 +1,9 @@
-import { StyledButton,FancyButton,SubmitButton } from "./Button.styles";
+import { StyledButton,FancyButton,SubmitButton, DarkButton } from "./Button.styles";
 
 
 export default {
     StyledButton,
     FancyButton,
-    SubmitButton
+    SubmitButton,
+    DarkButton,
 }
