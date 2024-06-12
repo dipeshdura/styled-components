@@ -1,11 +1,11 @@
 
 // import StyledButton,{FancyButton} from "./components/Button/Button"
-import {StyledButton, FancyButton } from "./components/Button/Button.styles"
+import {StyledButton, FancyButton, SubmitButton } from "./components/Button/Button.styles"
 
 const App = () => {
   return (
     <div>
-     <StyledButton>Button</StyledButton>
+     <StyledButton type="submit">Button</StyledButton>
      <div>
       <br/>
      </div>
@@ -14,6 +14,10 @@ const App = () => {
       <br />
      </div>
      <FancyButton as="a">FancyButton</FancyButton>
+     <div>
+      <br />
+     </div>
+     <SubmitButton>Submit Button</SubmitButton>
     </div>
   )
 }
