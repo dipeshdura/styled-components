@@ -1,6 +1,6 @@
 
 // import StyledButton,{FancyButton} from "./components/Button/Button"
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider,createGlobalStyle } from "styled-components";
 import {StyledButton, FancyButton, SubmitButton, AnimatedLogo,DarkButton } from "./components/Button/Button.styles"
 import logo from "./assets/react.svg";
 import './App.css';
@@ -13,12 +13,19 @@ const theme ={
   light:{
     primary:"#fff",
     text:"#000"
-  }
+  },
+  fontFamily:"Roboto",
 }
-
+const GlobalStyle =createGlobalStyle`
+  button{
+    font-family:${(props)=>props.theme.fontFamily}
+    /* font-family:"Roboto"; */
+  }
+`
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle/>
     <div>
       {/* <img 
       src={logo}
