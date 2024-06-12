@@ -1,10 +1,18 @@
 
 // import StyledButton,{FancyButton} from "./components/Button/Button"
-import {StyledButton, FancyButton, SubmitButton } from "./components/Button/Button.styles"
+import {StyledButton, FancyButton, SubmitButton, AnimatedLogo } from "./components/Button/Button.styles"
+import logo from "./assets/react.svg";
+import './App.css';
+import './styles.css';
 
 const App = () => {
   return (
     <div>
+      {/* <img 
+      src={logo}
+      className="App-logo"
+       alt="" /> */}
+       <AnimatedLogo src={logo}/>
      <StyledButton type="submit">Button</StyledButton>
      <div>
       <br/>
